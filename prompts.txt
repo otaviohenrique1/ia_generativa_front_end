@@ -54,13 +54,80 @@ Claro, vou sugerir algumas melhorias de semântica e acessibilidade para o códi
 
 Aqui estão as principais melhorias:
 
-Adição de um <header>: Envolve todo o conteúdo do cabeçalho, indicando claramente que é o cabeçalho da página.
-
-Uso de <nav> para a navegação: A lista de itens de navegação agora está dentro de um elemento <nav>, indicando que é a seção de navegação principal.
-
-Uso de <ul> e <li> para a lista de itens de navegação: Os itens de navegação estão agora dentro de uma lista não ordenada <ul> para melhor semântica, com cada item dentro de um elemento <li>.
-
-Atributos aria-label: Adicionados aos links para fornecer rótulos de acessibilidade, especialmente úteis quando o texto visível não é suficientemente descritivo.
-
-Atributo alt em <img>: Adicionado um atributo alt descritivo para a tag <img> para fornecer uma descrição do conteúdo da imagem para usuários que utilizam leitores de tela.
+1. Adição de um <header>: Envolve todo o conteúdo do cabeçalho, indicando claramente que é o cabeçalho da página.
+2. Uso de <nav> para a navegação: A lista de itens de navegação agora está dentro de um elemento <nav>, indicando que é a seção de navegação principal.
+3. Uso de <ul> e <li> para a lista de itens de navegação: Os itens de navegação estão agora dentro de uma lista não ordenada <ul> para melhor semântica, com cada item dentro de um elemento <li>.
+4. Atributos aria-label: Adicionados aos links para fornecer rótulos de acessibilidade, especialmente úteis quando o texto visível não é suficientemente descritivo.
+5. Atributo alt em <img>: Adicionado um atributo alt descritivo para a tag <img> para fornecer uma descrição do conteúdo da imagem para usuários que utilizam leitores de tela.
 -----------------------------------------------
+-------------Pergunta-------------
+<div class="banner">
+    <div class="banner__wrapper">
+        <img class="banner__img" alt="" src="./img/maldivas@2x.png" />
+        <div class="banner__descricao">
+            Somos uma agência apaixonada por criar viagens inesquecíveis. Do
+            destino à seleção das atividades, cuidamos de todos os detalhes
+            para que você aproveite ao máximo cada momento da sua jornada!
+        </div>
+    </div>
+</div>
+
+Seguindo nas melhorias sobre semântica e acessibilidade, me sugira melhorias para esse código enviado, por favor.
+-------------Resposta-------------
+Claro, vou sugerir algumas melhorias de semântica e acessibilidade para o código HTML do banner:
+<div class="banner">
+    <div class="banner__wrapper">
+      <img class="banner__img" alt="Maldivas" src="./img/maldivas@2x.png" aria-label="Imagem das Maldivas" />
+      <div class="banner__descricao">
+        <p>
+          Somos uma agência apaixonada por criar viagens inesquecíveis. Do
+          destino à seleção das atividades, cuidamos de todos os detalhes
+          para que você aproveite ao máximo cada momento da sua jornada!
+        </p>
+      </div>
+    </div>
+  </div>
+Aqui estão as melhorias propostas:
+1. Adição de um texto descritivo para a imagem: O atributo alt da tag <img> foi preenchido com uma descrição apropriada ("Maldivas"), para fornecer informações sobre o conteúdo da imagem a usuários que utilizam tecnologias assistivas.
+2. Utilização de <p> para o texto descritivo: O texto descritivo foi envolvido em uma tag <p> (parágrafo) para melhorar a estrutura semântica, indicando que é um parágrafo de texto.
+
+Essas pequenas alterações visam melhorar a acessibilidade e a semântica do código, garantindo que usuários com deficiências visuais ou que utilizem tecnologias assistivas possam entender e interagir adequadamente com o conteúdo.
+-------------Pergunta-------------
+Por favor, mande o código refatorado aplicando essas melhorias.
+-------------Resposta-------------
+Claro, aqui está o código refatorado aplicando as melhorias sugeridas:
+<div class="banner">
+    <div class="banner__wrapper">
+        <img class="banner__img" alt="Maldivas" src="./img/maldivas@2x.png" aria-label="Imagem das Maldivas" />
+        <div class="banner__descricao">
+            <p>
+                Somos uma agência apaixonada por criar viagens inesquecíveis. Do
+                destino à seleção das atividades, cuidamos de todos os detalhes
+                para que você aproveite ao máximo cada momento da sua jornada!
+            </p>
+        </div>
+    </div>
+</div>
+Agora, o atributo alt da imagem está preenchido com uma descrição apropriada, e o texto descritivo está contido em um elemento <p>, melhorando a semântica e a acessibilidade do código.
+-------------Pergunta-------------
+Nesse cenário, faz sentido termos uma tag figure envolvendo nossa tag img?
+-------------Resposta-------------
+Sim, faz sentido envolver a tag <img> em uma tag <figure> quando a imagem é parte de um conteúdo que requer uma explicação ou contexto adicional. A tag <figure> é usada para encapsular qualquer conteúdo que seja autocontido, como imagens, gráficos, ilustrações, entre outros, juntamente com uma legenda opcional usando a tag <figcaption>.
+
+Aqui está uma maneira de incluir a tag <figure> ao redor da <img> com uma <figcaption>:
+<div class="banner">
+    <div class="banner__wrapper">
+        <figure>
+            <img class="banner__img" alt="Maldivas" src="./img/maldivas@2x.png" aria-label="Imagem das Maldivas" />
+            <figcaption>Ilha paradisíaca nas Maldivas</figcaption>
+        </figure>
+        <div class="banner__descricao">
+            <p>
+                Somos uma agência apaixonada por criar viagens inesquecíveis. Do
+                destino à seleção das atividades, cuidamos de todos os detalhes
+                para que você aproveite ao máximo cada momento da sua jornada!
+            </p>
+        </div>
+    </div>
+</div>
+A adição da tag <figure> com uma <figcaption> ajuda a criar uma relação semântica entre a imagem e sua descrição ou legenda, o que pode ser útil para leitores de tela e outros dispositivos assistivos. A <figcaption> fornece uma legenda descritiva para a imagem.

@@ -39,7 +39,7 @@
     max-width: 100%;
 }
 
-.banner__descricao {
+.banner__img-descricao {
     max-width: 1200px;
     color: var(--grafite, #222);
     text-align: center;
