@@ -203,10 +203,9 @@ Já que uma oferta é uma section, faz sentido que alguma parte desse código se
         </div>
     </div>
 </section>
--------------Pergunta-------------
--------------Resposta-------------
-
--------------Pergunta-------------
--------------Resposta-------------
-
 ----------------------------------------------- 
+-------------Pergunta-------------
+-------------Resposta-------------
+
+-------------Pergunta-------------
+-------------Resposta-------------
