@@ -35,6 +35,10 @@
     line-height: normal;
 }
 
+.banner__img-wrapper {
+    margin: 0;
+}
+
 .banner__img {
     max-width: 100%;
 }
@@ -145,6 +149,7 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0;
 }
 
 .ofertas__card--preco {

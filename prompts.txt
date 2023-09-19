@@ -131,3 +131,82 @@ Aqui está uma maneira de incluir a tag <figure> ao redor da <img> com uma <figc
     </div>
 </div>
 A adição da tag <figure> com uma <figcaption> ajuda a criar uma relação semântica entre a imagem e sua descrição ou legenda, o que pode ser útil para leitores de tela e outros dispositivos assistivos. A <figcaption> fornece uma legenda descritiva para a imagem.
+-----------------------------------------------
+-------------Pergunta-------------
+Dado esse HTML:
+
+<div class="ofertas__cards--item ofertas__cards--japao">
+    <div class="ofertas__card">
+        <div class="ofertas__card--conteudo">
+            <div class="ofertas__card--destino">
+                <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
+                <b class="ofertas__card--destino-nome">Japão</b>
+            </div>
+            <div class="ofertas__card--preco">R$ 4000</div>
+            <div class="ofertas__card--botao">
+                <span cslass="ofertas__card--botao-texto">Ver detalhes</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+refatore aplicando boas práticas de semântica e acessibilidade nesse código.
+
+-------------Resposta-------------
+Claro! Aqui está o código refatorado aplicando boas práticas de semântica e acessibilidade:
+<div class="oferta">
+    <div class="oferta__card">
+        <div class="oferta__card--conteudo">
+            <div class="oferta__card--destino">
+                <div class="oferta__card--destino-tipo">HOTEL+AÉREO</div>
+                <h2 class="oferta__card--destino-nome">Japão</h2>
+            </div>
+            <div class="oferta__card--preco">R$ 4000</div>
+            <div class="oferta__card--botao">
+                <a href="#" class="oferta__card--botao-link">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+</div>
+Agora o código está mais semântico e acessível.
+-------------Pergunta-------------
+Eu tenho uma div que é um container para 4 blocos iguais a esse. Faz sentido que cada oferta seja uma section?
+-------------Resposta-------------
+<section class="oferta">
+    <div class="oferta__card">
+        <div class="oferta__card--conteudo">
+            <div class="oferta__card--destino">
+                <div class="oferta__card--destino-tipo">HOTEL+AÉREO</div>
+                <h2 class="oferta__card--destino-nome">Japão</h2>
+            </div>
+            <div class="oferta__card--preco">R$ 4000</div>
+            <div class="oferta__card--botao">
+                <a href="#" class="oferta__card--botao-link">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+</section>
+-------------Pergunta-------------
+Já que uma oferta é uma section, faz sentido que alguma parte desse código seja um header?
+-------------Resposta-------------
+<section class="oferta">
+    <div class="oferta__card">
+        <div class="oferta__card--conteudo">
+            <header class="oferta__card--destino">
+                <div class="oferta__card--destino-tipo">HOTEL+AÉREO</div>
+                <h2 class="oferta__card--destino-nome">Japão</h2>
+            </header>
+            <div class="oferta__card--preco">R$ 4000</div>
+            <div class="oferta__card--botao">
+                <a href="#" class="oferta__card--botao-link">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+</section>
+-------------Pergunta-------------
+-------------Resposta-------------
+
+-------------Pergunta-------------
+-------------Resposta-------------
+
+----------------------------------------------- 

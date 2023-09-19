@@ -40,9 +40,8 @@
 
   <section class="banner">
     <div class="banner__wrapper">
-      <figure>
-        <img class="banner__img" alt="Homem navegando numa canoa" src="./img/maldivas@2x.png"
-          aria-label="Imagem das Maldivas" />
+      <figure class="banner__img-wrapper">
+        <img class="banner__img" alt="Imagem das Maldivas" src="./img/maldivas@2x.png" />
         <figcaption class="banner__img-descricao">
           Somos uma agência apaixonada por criar viagens inesquecíveis. Do
           destino à seleção das atividades, cuidamos de todos os detalhes
@@ -53,27 +52,28 @@
   </section>
 
   <main class="container">
-    <div class="ofertas">
+
+    <section class="ofertas">
       <div class="ofertas__titulo">
         <div class="ofertas__titulo--texto">Ofertas da semana</div>
         <div class="ofertas__titulo--sublinhado"></div>
       </div>
       <div class="ofertas__cards">
         <div class="ofertas__cards--grupo">
-          <div class="ofertas__cards--item ofertas__cards--japao">
+          <section class="ofertas__cards--item  ofertas__cards--japao">
             <div class="ofertas__card">
               <div class="ofertas__card--conteudo">
-                <div class="ofertas__card--destino">
+                <header class="ofertas__card--destino">
                   <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                  <b class="ofertas__card--destino-nome">Japão</b>
-                </div>
+                  <h2 class="ofertas__card--destino-nome">Japão</h2>
+                </header>
                 <div class="ofertas__card--preco">R$ 4000</div>
                 <div class="ofertas__card--botao">
-                  <span class="ofertas__card--botao-texto">Ver detalhes</span>
+                  <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
           <div class="ofertas__cards--item  ofertas__cards--san-andreas">
             <div class="ofertas__card">
               <div class="ofertas__card--conteudo">
@@ -118,7 +118,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="busca">
       <div class="busca__titulo">
